@@ -598,13 +598,15 @@ st.markdown(
             padding-right: 0.82rem;
             color: #5c697b;
         }
-        .stTabs [data-baseweb="tab"] p { color: #5c697b; }
+        .stTabs [data-baseweb="tab"] p,
+        .stTabs [data-baseweb="tab"] span { color: #5c697b; }
         .stTabs [aria-selected="true"] {
             background: #eaf1f8;
             color: var(--dashboard-navy);
             font-weight: 700;
         }
-        .stTabs [aria-selected="true"] p { color: var(--dashboard-navy); }
+        .stTabs [aria-selected="true"] p,
+        .stTabs [aria-selected="true"] span { color: var(--dashboard-navy); }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"] {
             gap: 0.2rem;
             padding: 0.4rem;
@@ -627,14 +629,18 @@ st.markdown(
             white-space: nowrap;
         }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"]
-        > button[data-baseweb="tab"] p { color: #5c697b; }
+        > button[data-baseweb="tab"] p,
+        .st-key-analysis_navigation > div[data-baseweb="tab-list"]
+        > button[data-baseweb="tab"] span { color: #5c697b; }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"]
         > button[data-baseweb="tab"]:hover {
             color: var(--dashboard-navy);
             background: #f0f4f8;
         }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"]
-        > button[data-baseweb="tab"]:hover p { color: var(--dashboard-navy); }
+        > button[data-baseweb="tab"]:hover p,
+        .st-key-analysis_navigation > div[data-baseweb="tab-list"]
+        > button[data-baseweb="tab"]:hover span { color: var(--dashboard-navy); }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"]
         > button[data-baseweb="tab"][aria-selected="true"] {
             color: #ffffff;
@@ -643,7 +649,9 @@ st.markdown(
             font-weight: 750;
         }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"]
-        > button[data-baseweb="tab"][aria-selected="true"] p { color: #ffffff; }
+        > button[data-baseweb="tab"][aria-selected="true"] p,
+        .st-key-analysis_navigation > div[data-baseweb="tab-list"]
+        > button[data-baseweb="tab"][aria-selected="true"] span { color: #ffffff; }
         .st-key-analysis_navigation > div[data-baseweb="tab-panel"] {
             background: transparent;
             border: 0;
@@ -761,6 +769,10 @@ st.markdown(
             font-size: 0.76rem;
             line-height: 1.45;
         }
+        [data-testid="stProgress"] [data-testid="stMarkdownContainer"] p,
+        [data-testid="stProgress"] [data-testid="stMarkdownContainer"] span {
+            color: #34465d;
+        }
         [data-testid="stExpander"] details {
             overflow: hidden;
             background: #ffffff;
@@ -833,10 +845,13 @@ st.markdown(
         [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
         [data-baseweb="select"] span,
         [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
-        [data-baseweb="select"] input,
+        [data-baseweb="select"] input {
+            color: #27364b;
+        }
         [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
         [data-testid="stNumberInputContainer"] input {
             color: #27364b;
+            -webkit-text-fill-color: #27364b;
         }
         [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
         .stButton > button[kind="primary"] {
