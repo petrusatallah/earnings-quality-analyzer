@@ -574,6 +574,7 @@ st.markdown(
             color: #233b58;
             font-weight: 730;
         }
+        [data-testid="stDataFrame"] [role="columnheader"] * { color: #233b58; }
         [data-testid="stDataFrame"] { margin-bottom: 0.25rem; }
         .stTabs [data-baseweb="tab-list"] {
             gap: 0.25rem;
@@ -595,12 +596,15 @@ st.markdown(
             border-radius: 8px;
             padding-left: 0.82rem;
             padding-right: 0.82rem;
+            color: #5c697b;
         }
+        .stTabs [data-baseweb="tab"] p { color: #5c697b; }
         .stTabs [aria-selected="true"] {
             background: #eaf1f8;
             color: var(--dashboard-navy);
             font-weight: 700;
         }
+        .stTabs [aria-selected="true"] p { color: var(--dashboard-navy); }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"] {
             gap: 0.2rem;
             padding: 0.4rem;
@@ -623,10 +627,14 @@ st.markdown(
             white-space: nowrap;
         }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"]
+        > button[data-baseweb="tab"] p { color: #5c697b; }
+        .st-key-analysis_navigation > div[data-baseweb="tab-list"]
         > button[data-baseweb="tab"]:hover {
             color: var(--dashboard-navy);
             background: #f0f4f8;
         }
+        .st-key-analysis_navigation > div[data-baseweb="tab-list"]
+        > button[data-baseweb="tab"]:hover p { color: var(--dashboard-navy); }
         .st-key-analysis_navigation > div[data-baseweb="tab-list"]
         > button[data-baseweb="tab"][aria-selected="true"] {
             color: #ffffff;
@@ -634,6 +642,8 @@ st.markdown(
             box-shadow: 0 3px 9px rgba(24, 43, 73, 0.18);
             font-weight: 750;
         }
+        .st-key-analysis_navigation > div[data-baseweb="tab-list"]
+        > button[data-baseweb="tab"][aria-selected="true"] p { color: #ffffff; }
         .st-key-analysis_navigation > div[data-baseweb="tab-panel"] {
             background: transparent;
             border: 0;
@@ -717,24 +727,29 @@ st.markdown(
             background: #ffffff;
             border-color: #cfd9e4;
         }
+        .stButton > button[kind="secondary"] p { color: #294562; }
         .stButton > button[kind="secondary"]:hover {
             color: var(--dashboard-navy);
             border-color: #8fa6bc;
             background: #f7f9fb;
         }
+        .stButton > button[kind="secondary"]:hover p { color: var(--dashboard-navy); }
         [data-testid="stDownloadButton"] > button {
             color: #ffffff;
             background: linear-gradient(110deg, #182b49 0%, #28547e 100%);
             border: 1px solid #182b49;
             box-shadow: 0 4px 12px rgba(24, 43, 73, 0.16);
         }
+        [data-testid="stDownloadButton"] > button p { color: #ffffff; }
         [data-testid="stDownloadButton"] > button:hover {
             color: #ffffff;
             border-color: #244d78;
             background: linear-gradient(110deg, #213b61 0%, #326590 100%);
             box-shadow: 0 5px 15px rgba(24, 43, 73, 0.21);
         }
+        [data-testid="stDownloadButton"] > button:hover p { color: #ffffff; }
         [data-testid="stAlert"] {
+            color: #34465d;
             border: 1px solid rgba(82, 97, 116, 0.16);
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(24, 43, 73, 0.035);
@@ -742,6 +757,7 @@ st.markdown(
             padding-bottom: 0.65rem;
         }
         [data-testid="stAlert"] p {
+            color: #34465d;
             font-size: 0.76rem;
             line-height: 1.45;
         }
@@ -758,6 +774,7 @@ st.markdown(
             font-size: 0.76rem;
             font-weight: 710;
         }
+        [data-testid="stExpander"] summary * { color: #344d69; }
         [data-testid="stExpander"] details[open] summary {
             background: #f5f8fb;
             border-bottom: 1px solid #e2e7ed;
@@ -812,8 +829,19 @@ st.markdown(
             border-radius: 9px;
         }
         [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
+        [data-baseweb="select"] > div,
+        [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
+        [data-baseweb="select"] span,
+        [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
+        [data-baseweb="select"] input,
+        [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
+        [data-testid="stNumberInputContainer"] input {
+            color: #27364b;
+        }
+        [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
         .stButton > button[kind="primary"] {
             min-height: 2.8rem;
+            color: #ffffff;
             border: 1px solid #182b49;
             border-radius: 9px;
             background: linear-gradient(110deg, #182b49 0%, #28547e 100%);
@@ -822,17 +850,32 @@ st.markdown(
             letter-spacing: 0.01em;
         }
         [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
+        .stButton > button[kind="primary"] p { color: #ffffff; }
+        [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
         .stButton > button[kind="primary"]:hover {
+            color: #ffffff;
             border-color: #244d78;
             background: linear-gradient(110deg, #213b61 0%, #326590 100%);
             box-shadow: 0 6px 16px rgba(24, 43, 73, 0.25);
         }
+        [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
+        .stButton > button[kind="primary"]:hover p { color: #ffffff; }
         [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
         .stButton > button[kind="primary"]:disabled {
             color: #788596;
             background: #e9edf2;
             border-color: #d4dbe4;
             box-shadow: none;
+        }
+        [data-testid="stLayoutWrapper"]:has(.analysis-setup-title)
+        .stButton > button[kind="primary"]:disabled p { color: #788596; }
+        [data-testid="stCaptionContainer"],
+        [data-testid="stCaptionContainer"] p {
+            color: #657286;
+        }
+        [data-testid="stTooltipContent"] p,
+        [data-testid="stTooltipErrorContent"] p {
+            color: inherit;
         }
         .setup-support {
             color: #718095;
